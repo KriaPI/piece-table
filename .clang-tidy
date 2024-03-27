@@ -1,0 +1,4 @@
+Checks:          'cppcoreguidelines-*,modernize-*,-modernize-use-trailing-return-type'
+WarningsAsErrors: true
+AnalyzeTemporaryDtors: false
+FormatStyle:     google
