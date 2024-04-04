@@ -21,10 +21,10 @@ To run tests:
 
     cd builddir
     meson test
+    meson test --wrap='valgrind --leak-check=full --error-exitcode=1'
 
 To run clang tidy, or clang-format (assuming those are installed):
 
     cd builddir
     ninja clang-format
     ninja clang-tidy
-

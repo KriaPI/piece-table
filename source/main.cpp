@@ -1,10 +1,12 @@
 #include <iostream>
 
-#include "template.hpp"
+#include "piece_table.hpp"
 
-auto main() -> int {
-    std::cout
-        << "Hi! I regret to inform you that 2 + 2 is not 5, it is in fact, "
-        << placeholder::add(2, 2) << ".\n";
+int main() {
+    KUNI::Piece_table document{"ABCE"};
+    document.insert("F", document.length());
+    document.insert("D", 3);
+    std::cout << document.get_text() << '\n';
+
     std::exit(EXIT_SUCCESS);
 }
